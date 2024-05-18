@@ -53,7 +53,7 @@ router.get("/users/:userId", function (req, res, next) {
   const userId = req.params.userId;
 
   // 사용자 정보를 담아서 페이지를 렌더링해 응답
-  res.render("index", { title: `Hello user #${userId}` });
+  res.render("index", { title: `Hello user ${userId}` });
 });
 
 module.exports = router;
